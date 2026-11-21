@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Sinmak Inc — Northeast regional general freight carrier. USDOT 3472956. Full Northeast coverage: ME · NH · VT · MA · RI · CT · NY · NJ · PA · MD. Now hiring CDL-A drivers: $1,800–$2,000/week, 1099 independent contractor, home weekly." />
+<link rel="icon" href="data:," />
+<title>Sinmak Inc — Northeast Regional Freight | USDOT 3472956</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f2f4f6;
+    --surface:#ffffff;
+    --ink:#0d1b2a;
+    --ink-2:#33475e;
+    --muted:#5b6f84;
+    --line:#dde3e9;
+    --accent:#e8590c;
+    --accent-dark:#c94a06;
+    --accent-soft:#fff1e8;
+    --navy:#0d1b2a;
+    --navy-2:#162b42;
+    --gold:#f5a623;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(13,27,42,.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0a111b;
+      --bg-soft:#0f1a29;
+      --surface:#121e30;
+      --ink:#f2f5f8;
+      --ink-2:#c7d2de;
+      --muted:#93a6ba;
+      --line:#24344a;
+      --accent:#ff7a29;
+      --accent-dark:#ff7a29;
+      --accent-soft:#2a1c10;
+      --navy:#0a111b;
+      --navy-2:#162b42;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Barlow",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+  .cond{font-family:"Barlow Condensed",sans-serif;letter-spacing:.02em;text-transform:uppercase}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand-mark{width:44px;height:44px;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:24px;border-radius:9px;flex:none}
+  @media (prefers-color-scheme: dark){.brand-mark{background:var(--accent);color:#111}}
+  .brand-text{line-height:1}
+  .brand-text strong{font-family:"Barlow Condensed",sans-serif;font-size:26px;letter-spacing:.04em;display:block}
+  .brand-text span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  nav.desktop{display:flex;gap:28px;align-items:center}
+  nav.desktop a{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink-2)}
+  nav.desktop a:hover{color:var(--accent)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 22px;font-size:15px;border:1.5px solid transparent;cursor:pointer;transition:.15s}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-dark)}
+  .btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}
+  .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-white{background:#fff;color:#0d1b2a}
+  .btn-ghost-w{border-color:rgba(255,255,255,.7);color:#fff;background:transparent}
+  .btn-ghost-w:hover{border-color:#fff}
+  .btn-sm{padding:9px 16px;font-size:14px}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:44px;height:44px;cursor:pointer;font-size:20px;color:var(--ink)}
+  .mobile-nav{display:none;border-top:1px solid var(--line);padding:12px 0 16px}
+  .mobile-nav.open{display:block}
+  .mobile-nav a{display:block;padding:10px 0;text-decoration:none;font-weight:600;border-bottom:1px solid var(--line)}
+  .mobile-nav a:last-child{border:none}
+
+  /* Hero */
+  .hero{position:relative;background:#0d1b2a;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,28,.92) 0%,rgba(7,17,28,.78) 46%,rgba(7,17,28,.28) 78%,rgba(7,17,28,.12) 100%)}
+  .hero-in{position:relative;padding:72px 0 64px;max-width:680px}
+  .hero-badge{display:inline-flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .pill{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff}
+  .pill.hot{background:var(--accent);border-color:var(--accent)}
+  .hero h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(52px,8vw,84px);line-height:.95;margin:0 0 16px;font-weight:700;text-transform:uppercase}
+  .hero h1 em{font-style:normal;color:#ff8a3d}
+  .hero p.lead{font-size:19px;line-height:1.55;color:#dbe6f0;margin:0 0 26px;max-width:560px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14.5px;color:#cbd9e6;font-weight:600}
+  .hero-meta span::before{content:"✓ ";color:#ff8a3d;font-weight:800}
+
+  /* Trust strip */
+  .trust{background:var(--navy);color:#fff}
+  @media (prefers-color-scheme: dark){.trust{background:#060b12;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}}
+  .trust-in{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .trust-item{padding:20px 18px;border-left:1px solid rgba(255,255,255,.14);text-align:left}
+  .trust-item:first-child{border-left:none;padding-left:0}
+  .trust-item strong{font-family:"Barlow Condensed",sans-serif;font-size:24px;display:block;line-height:1;letter-spacing:.02em}
+  .trust-item span{font-size:13px;color:#aebfd1;font-weight:600;text-transform:uppercase;letter-spacing:.07em}
+
+  section{padding:72px 0}
+  .section-soft{background:var(--bg-soft)}
+  .kicker{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  h2{font-family:"Barlow Condensed",sans-serif;font-size:clamp(36px,5vw,50px);line-height:1;text-transform:uppercase;margin:0 0 12px;font-weight:700}
+  .section-lead{font-size:17.5px;color:var(--ink-2);max-width:680px;margin:0 0 36px}
+
+  /* Services */
+  .svc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:stretch}
+  .svc-cards{display:grid;gap:16px}
+  .svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .svc h3{margin:0 0 6px;font-size:20px}
+  .svc p{margin:0;color:var(--ink-2);font-size:15.5px}
+  .svc .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:999px;margin-bottom:10px}
+  .svc-photo{border-radius:var(--radius);overflow:hidden;min-height:320px;position:relative}
+  .svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .svc-photo figcaption{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(7,17,28,.86);color:#fff;padding:14px 16px;border-radius:10px;font-size:14.5px}
+  .svc-photo figcaption strong{display:block;font-size:16px;margin-bottom:2px}
+
+  /* Coverage */
+  .cov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .state-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .state-card .abbr{font-family:"Barlow Condensed",sans-serif;font-size:38px;font-weight:700;line-height:1;color:var(--accent)}
+  .state-card h3{margin:6px 0 4px;font-size:18px}
+  .state-card p{margin:0;font-size:14.5px;color:var(--muted)}
+  .cov-note{margin-top:18px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);padding:16px 18px;border-radius:var(--radius);font-size:15.5px}
+  .cov-note strong{color:var(--accent-dark)}
+  @media (prefers-color-scheme: dark){.cov-note strong{color:var(--accent)}}
+
+  /* Why */
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why{display:flex;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .why-num{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:700;color:var(--accent);line-height:1;flex:none;width:38px}
+  .why h3{margin:0 0 4px;font-size:18px}
+  .why p{margin:0;color:var(--ink-2);font-size:15px}
+
+  /* Drivers */
+  .drivers{background:var(--navy);color:#fff;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+  .drivers-photo{min-height:420px;position:relative}
+  .drivers-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .pay-badge{position:absolute;left:18px;bottom:18px;background:var(--accent);color:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+  .pay-badge strong{font-family:"Barlow Condensed",sans-serif;font-size:30px;line-height:1;display:block}
+  .pay-badge span{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.92}
+  .drivers-body{padding:38px 36px}
+  .drivers-body .kicker{color:#ff8a3d}
+  .drivers-body h2{color:#fff}
+  .drivers-body p.intro{color:#cbd9e6;margin:0 0 20px;font-size:16.5px}
+  .perks{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:10px}
+  .perks li{display:flex;gap:10px;align-items:flex-start;font-size:16px;font-weight:600}
+  .perks li::before{content:"✓";color:#ff8a3d;font-weight:900;flex:none}
+  .perks li small{display:block;font-weight:400;color:#aebfd1;font-size:14px}
+  .req{border-top:1px solid rgba(255,255,255,.18);padding-top:18px;margin-top:4px}
+  .req h3{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#aebfd1;margin:0 0 10px}
+  .req ul{margin:0;padding-left:18px;color:#dbe6f0;font-size:15px;display:grid;gap:4px}
+
+  /* Forms */
+  .forms{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .form-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .form-card h3{margin:0 0 4px;font-size:22px;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.02em}
+  .form-card>p{margin:0 0 18px;color:var(--muted);font-size:14.5px}
+  label{display:block;font-size:13.5px;font-weight:700;margin:14px 0 6px}
+  label:first-of-type{margin-top:0}
+  input,select,textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:9px;font:inherit;font-size:15px;background:var(--bg);color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .form-card .btn{width:100%;margin-top:18px}
+  .form-note{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .contact-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-align:left}
+  .contact-card .label{font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .contact-card a.big,.contact-card .big{font-size:22px;font-weight:700;text-decoration:none;line-height:1.25;display:block;word-break:break-word}
+  .contact-card a.big:hover{color:var(--accent)}
+  .contact-card p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
+
+  footer{background:var(--navy);color:#aebfd1;padding:36px 0}
+  @media (prefers-color-scheme: dark){footer{background:#060b12;border-top:1px solid var(--line)}}
+  .footer-in{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:flex-start}
+  footer strong{color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:22px;letter-spacing:.04em}
+  footer a{color:#dbe6f0}
+  .footer-small{font-size:13.5px;line-height:1.7}
+
+  @media (max-width:900px){
+    nav.desktop{display:none}
+    .menu-btn{display:grid;place-items:center}
+    .trust-in{grid-template-columns:1fr 1fr}
+    .trust-item{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.14)}
+    .trust-item:nth-child(-n+2){border-top:none}
+    .svc-grid,.forms,.drivers{grid-template-columns:1fr}
+    .drivers-photo{min-height:300px}
+    .cov-grid{grid-template-columns:1fr 1fr}
+    .why-grid,.contact-grid{grid-template-columns:1fr}
+    .hero-in{padding:52px 0 48px}
+    section{padding:54px 0}
+  }
+  @media (max-width:520px){
+    .cov-grid{grid-template-columns:1fr}
+    .form-row{grid-template-columns:1fr}
+    .hero-ctas .btn{width:100%}
+    .header-phone{display:none}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Sinmak Inc — home">
+      <span class="brand-mark">S</span>
+      <span class="brand-text"><strong>SINMAK INC</strong><span>Northeast Regional Freight</span></span>
+    </a>
+    <nav class="desktop" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#why">Why Sinmak</a>
+      <a href="#drivers">Drivers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn btn-accent btn-sm header-phone" href="tel:+13025567717">Call (302) 556-7717</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="wrap mobile-nav" id="mobileNav">
+    <a href="#services">Services</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#why">Why Sinmak</a>
+    <a href="#drivers">Drive for Sinmak</a>
+    <a href="#quote">Get a Rate</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"><img src="assets/hero-truck.jpg" alt="White Sinmak-style semi tractor-trailer running on a U.S. highway under a clear blue sky" /></div>
+    <div class="wrap">
+      <div class="hero-in">
+        <div class="hero-badge">
+          <span class="pill hot">Now Hiring CDL-A Drivers</span>
+          <span class="pill">USDOT 3472956</span>
+        </div>
+        <h1>Northeast freight.<br/>Delivered <em>right.</em></h1>
+        <p class="lead">Sinmak Inc is a general freight carrier running the whole Northeast — from Maine to Maryland: New York, New Jersey, Pennsylvania, Maryland, and all of New England. Tight docks, multi-stop runs, real deadlines. We know this region, and we move it well.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-accent" href="#quote">Get a Rate →</a>
+          <a class="btn btn-ghost-w" href="#drivers">Drive for Sinmak — $1,800–$2,000/wk</a>
+        </div>
+        <div class="hero-meta">
+          <span>53′ dry van general freight</span>
+          <span>Multi-stop Northeast runs</span>
+          <span>Direct line to dispatch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap trust-in">
+      <div class="trust-item"><strong>3472956</strong><span>USDOT Number</span></div>
+      <div class="trust-item"><strong>ME → MD</strong><span>Full Northeast Coverage</span></div>
+      <div class="trust-item"><strong>53′ Dry Van</strong><span>General Freight</span></div>
+      <div class="trust-item"><strong>Republic, MO</strong><span>Home Base</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <p class="kicker">What we haul</p>
+      <h2>General freight, Northeast strong</h2>
+      <p class="section-lead">One call, one carrier, no runaround. If it fits in a 53-foot dry van and it’s headed into the Northeast, it’s in our wheelhouse.</p>
+      <div class="svc-grid">
+        <div class="svc-cards">
+          <article class="svc">
+            <span class="tag">Core Service</span>
+            <h3>General Freight — Dry Van</h3>
+            <p>Palletized general freight in 53′ dry vans. Retail, consumer goods, building materials, and everyday commercial loads — picked up on time and delivered with paperwork done right.</p>
+          </article>
+          <article class="svc">
+            <span class="tag">Our Lane</span>
+            <h3>Northeast Regional Runs</h3>
+            <p>Regional freight across the entire Northeast — NY, NJ, PA, and MD, plus all of New England (CT, MA, RI, VT, NH, ME). We run the corridors other carriers avoid — metro deliveries, tight appointment windows, and facilities that need a driver who knows the area.</p>
+          </article>
+          <article class="svc">
+            <span class="tag">Specialty</span>
+            <h3>Multi-Stop &amp; Time-Sensitive Loads</h3>
+            <p>Multi-stop routes and appointment freight handled stop by stop, with updates as the run progresses — not silence until something goes wrong.</p>
+          </article>
+        </div>
+        <figure class="svc-photo" style="margin:0">
+          <img src="assets/dock.jpg" alt="Forklift loading palletized freight into a trailer at a warehouse loading dock" />
+          <figcaption><strong>Dock to door, handled.</strong>Careful loading, secure freight, and a driver who checks in — not one who disappears.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section id="coverage" class="section-soft">
+    <div class="wrap">
+      <p class="kicker">Where we run</p>
+      <h2>Northeast coverage</h2>
+      <p class="section-lead">Our strength is the Northeast — all of it, from Maine to Maryland. Based in Republic, Missouri — focused where the freight is hardest to move well.</p>
+      <div class="cov-grid">
+        <div class="state-card"><div class="abbr">NY</div><h3>New York</h3><p>NYC metro, Long Island, Hudson Valley, and upstate lanes.</p></div>
+        <div class="state-card"><div class="abbr">NJ</div><h3>New Jersey</h3><p>Port-adjacent pickups, distribution hubs, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">PA</div><h3>Pennsylvania</h3><p>Philadelphia metro, Lehigh Valley, Harrisburg, and Pittsburgh lanes.</p></div>
+        <div class="state-card"><div class="abbr">MD</div><h3>Maryland</h3><p>Baltimore metro, the I-95 corridor, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">DE</div><h3>Delaware</h3><p>Wilmington metro, the I-95 corridor, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">CT</div><h3>Connecticut</h3><p>I-95 and I-84 corridors, multi-stop retail and LTL-style runs.</p></div>
+        <div class="state-card"><div class="abbr">MA</div><h3>Massachusetts</h3><p>Boston metro, I-90 and I-495 corridors, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">RI</div><h3>Rhode Island</h3><p>Providence metro and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">VT</div><h3>Vermont</h3><p>I-89 and I-91 corridors, Burlington, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">NH</div><h3>New Hampshire</h3><p>The I-93 corridor, southern New Hampshire, and statewide delivery.</p></div>
+        <div class="state-card"><div class="abbr">ME</div><h3>Maine</h3><p>Portland, Bangor, and the I-95 corridor across Maine.</p></div>
+      </div>
+      <div class="cov-note"><strong>Have a lane outside this list?</strong> Call or text <a href="tel:+13025567717"><strong>(302) 556-7717</strong></a> — if we can run it well, we’ll tell you straight. If we can’t, we’ll tell you that too.</div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="wrap">
+      <p class="kicker">Why Sinmak</p>
+      <h2>A small carrier that answers</h2>
+      <p class="section-lead">Shippers stay with carriers who communicate. Drivers stay with carriers who respect their time. We built Sinmak to be both.</p>
+      <div class="why-grid">
+        <div class="why"><div class="why-num">01</div><div><h3>You talk to a person</h3><p>No ticket systems, no phone trees. Call or text and you reach the people actually running your load.</p></div></div>
+        <div class="why"><div class="why-num">02</div><div><h3>Northeast know-how</h3><p>Tight docks, low clearances, appointment discipline, multi-stop sequencing — the Northeast rewards experience, and that’s our focus.</p></div></div>
+        <div class="why"><div class="why-num">03</div><div><h3>Safety and paperwork, done right</h3><p>USDOT 3472956. Inspected equipment, qualified CDL-A drivers, clean documentation on every load.</p></div></div>
+        <div class="why"><div class="why-num">04</div><div><h3>Straight answers</h3><p>Realistic ETAs, honest rates, and a call before there’s a problem — not after. That’s the whole business model.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRIVERS -->
+  <section id="drivers" style="padding-top:0">
+    <div class="wrap">
+      <div class="drivers">
+        <div class="drivers-photo">
+          <img src="assets/driver.jpg" alt="Professional CDL-A driver seated in the cab of a modern sleeper tractor" />
+          <div class="pay-badge"><strong>$1,800–$2,000</strong><span>Per week · 1099</span></div>
+        </div>
+        <div class="drivers-body">
+          <p class="kicker">Now Hiring</p>
+          <h2>CDL-A drivers: run the Northeast, be home weekly</h2>
+          <p class="intro">We’re hiring a 1099 independent contractor driver for Northeast regional freight. If you know the Northeast — or want steady regional work without living on the road — talk to us.</p>
+          <ul class="perks">
+            <li><span>$1,800–$2,000 per week<small>Steady regional freight, paid as a 1099 independent contractor</small></span></li>
+            <li><span>Home weekly<small>Regional runs — not months out at a time</small></span></li>
+            <li><span>1099 independent contractor<small>Contract driver position. You drive, we handle dispatch and freight</small></span></li>
+            <li><span>Direct communication<small>Talk to the company directly — no layers, no runaround</small></span></li>
+          </ul>
+          <div class="req">
+            <h3>What you’ll need</h3>
+            <ul>
+              <li>Valid CDL-A and current medical card</li>
+              <li>Tractor-trailer experience (Northeast regional a plus)</li>
+              <li>Clean, safe driving record</li>
+              <li>Able to handle multi-stop runs and tight delivery locations</li>
+            </ul>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px">
+            <a class="btn btn-accent" href="#apply">Apply to Drive →</a>
+            <a class="btn btn-ghost-w" href="tel:+13025567717">Call (302) 556-7717</a>
+          </div>
+          <p style="margin:16px 0 0"><a href="assets/jobs/cdl-a-driver.html" style="color:#ff8a3d;font-weight:700">See the full job posting →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMS -->
+  <section id="quote" class="section-soft" style="padding-top:64px">
+    <div class="wrap">
+      <p class="kicker">Get started</p>
+      <h2>Request a rate — or apply</h2>
+      <p class="section-lead">Fill out either form and it opens a ready-to-send email to Sinmak Inc. Prefer to talk? Call or text <a href="tel:+13025567717" style="font-weight:700">(302) 556-7717</a>.</p>
+      <div class="forms">
+        <form class="form-card" id="quoteForm">
+          <h3>Shipper — Rate Request</h3>
+          <p>Tell us the lane and we’ll come back with a straight rate.</p>
+          <label for="q-name">Your name / company</label>
+          <input id="q-name" required placeholder="e.g. ABC Distribution" />
+          <div class="form-row">
+            <div><label for="q-from">Pickup city &amp; state</label><input id="q-from" required placeholder="e.g. Newark, NJ" /></div>
+            <div><label for="q-to">Delivery city &amp; state</label><input id="q-to" required placeholder="e.g. Hartford, CT" /></div>
+          </div>
+          <div class="form-row">
+            <div><label for="q-type">Freight type</label><input id="q-type" placeholder="e.g. Palletized consumer goods" /></div>
+            <div><label for="q-date">Pickup date</label><input id="q-date" type="date" /></div>
+          </div>
+          <label for="q-notes">Anything else? (weight, stops, appointment needs)</label>
+          <textarea id="q-notes" rows="3" placeholder="e.g. 38,000 lbs, 2 stops, morning appointment"></textarea>
+          <button class="btn btn-accent" type="submit">Send Rate Request →</button>
+          <div class="form-note">Opens your email app, addressed to incsinmak@gmail.com</div>
+        </form>
+
+        <form class="form-card" id="applyForm">
+          <h3 id="apply">Driver — Quick Apply</h3>
+          <p>Two minutes. We’ll call you back to talk through the role.</p>
+          <label for="a-name">Full name</label>
+          <input id="a-name" required placeholder="Your full name" />
+          <div class="form-row">
+            <div><label for="a-phone">Phone</label><input id="a-phone" type="tel" required placeholder="(555) 555-5555" /></div>
+            <div><label for="a-exp">Years of CDL-A experience</label>
+              <select id="a-exp"><option>Less than 1 year</option><option>1–2 years</option><option selected>3–5 years</option><option>5+ years</option></select></div>
+          </div>
+          <label for="a-where">Where are you based?</label>
+          <input id="a-where" placeholder="City &amp; state" />
+          <label for="a-notes">Anything we should know? (record, endorsements, availability)</label>
+          <textarea id="a-notes" rows="3" placeholder="e.g. Clean record, medical card current, can start in 2 weeks"></textarea>
+          <button class="btn btn-accent" type="submit">Send Application →</button>
+          <div class="form-note">Opens your email app, addressed to incsinmak@gmail.com — or just call/text (302) 556-7717</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h2>Talk to Sinmak Inc</h2>
+      <p class="section-lead">Freight to move or a seat to fill — one call covers both.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="label">Call or Text</div>
+          <a class="big" href="tel:+13025567717">(302) 556-7717</a>
+          <p>Fastest way to reach us — rates, lanes, and driver applications.</p>
+        </div>
+        <div class="contact-card">
+          <div class="label">Email</div>
+          <a class="big" href="mailto:incsinmak@gmail.com">incsinmak@gmail.com</a>
+          <p>Send load details or your driving background and we’ll reply.</p>
+        </div>
+        <div class="contact-card">
+          <div class="label">Home Base</div>
+          <span class="big">Republic, Missouri</span>
+          <p>513 US Highway 60 E, Unit #854<br/>Republic, MO 65738<br/>USDOT 3472956</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-in">
+    <div>
+      <strong>SINMAK INC</strong>
+      <div class="footer-small">Northeast Regional General Freight<br/>sinmakinc.com</div>
+    </div>
+    <div class="footer-small">
+      USDOT 3472956 &nbsp;·&nbsp; 513 US Highway 60 E, Unit #854, Republic, MO 65738<br/>
+      <a href="tel:+13025567717">(302) 556-7717</a> &nbsp;·&nbsp; <a href="mailto:incsinmak@gmail.com">incsinmak@gmail.com</a><br/>
+      © 2026 Sinmak Inc. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var mobileNav=document.getElementById('mobileNav');
+  menuBtn.addEventListener('click',function(){
+    var open=mobileNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    menuBtn.textContent=open?'✕':'☰';
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){mobileNav.classList.remove('open');menuBtn.textContent='☰';});
+  });
+
+  function v(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+
+  document.getElementById('quoteForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var lines=[
+      'RATE REQUEST — Sinmak Inc website','',
+      'Name / Company: '+v('q-name'),
+      'Pickup: '+v('q-from'),
+      'Delivery: '+v('q-to'),
+      'Freight type: '+(v('q-type')||'—'),
+      'Pickup date: '+(v('q-date')||'—'),
+      'Notes: '+(v('q-notes')||'—')
+    ];
+    var subject=encodeURIComponent('Rate Request: '+v('q-from')+' → '+v('q-to'));
+    window.location.href='mailto:incsinmak@gmail.com?subject='+subject+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+
+  document.getElementById('applyForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var lines=[
+      'DRIVER APPLICATION — Sinmak Inc website','',
+      'Full name: '+v('a-name'),
+      'Phone: '+v('a-phone'),
+      'CDL-A experience: '+v('a-exp'),
+      'Based in: '+(v('a-where')||'—'),
+      'Notes: '+(v('a-notes')||'—')
+    ];
+    var subject=encodeURIComponent('CDL-A Driver Application — '+v('a-name'));
+    window.location.href='mailto:incsinmak@gmail.com?subject='+subject+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>
